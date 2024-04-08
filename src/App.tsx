@@ -33,7 +33,7 @@ const App: React.FC = () => {
       formData.append('file', audioFile);
 
       try {
-        const response = await fetch('http://18.232.116.252/predict', {
+        const response = await fetch('http://18.232.116.252/predict/', {
           method: 'POST',
           body: formData,
         });
